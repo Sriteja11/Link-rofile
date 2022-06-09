@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: linkrofile.herokuapp.com
+Token: b7ed627682669fd8e4a9d2db64c0a6bcefee2c3136f968e9f95bc131435bf7a0

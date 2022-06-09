@@ -1,0 +1,115 @@
+<% layout('/layouts/boilerplate') %>
+    <div class="row mb-3 justify-content-center">
+        <div class="card border-success col-10 col-md-6 col-lg-4">
+            <div class="card-header bg-transparent border-success text-center">
+                <h3 class="m-1">Introduction</h3>
+            </div>
+            <div class="card-body">
+                <form action="/new" novalidate class="row need-validate" method="post">
+                    <div class="mb-3">
+                        <label for="firstname">First Name*</label>
+                        <input type="text" required class="form-control" autofocus id="firstname" name="firstname">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a First Name.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastname">Last Name*</label>
+                        <input type="text" required class="form-control" id="lastname" name="lastname">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a Last Name.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email*</label>
+                        <input type="email" required class="form-control" id="email" name="email">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Email.
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-3">
+                        <label for="country">Country*</label>
+                        <select class="form-select" size="1" required id="country" name="country">
+                            <option value=""></option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Brunei">Brunei</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="China">China</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Laos">Laos</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="North Korea">North Korea</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="South Korea">South Korea</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="State of Palestine">State of Palestine</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-Leste">Timor-Leste</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Yemen">Yemen</option>
+                        </select>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a Country.
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 mb-3">
+                        <label for="role">Role*</label>
+                        <input type="text" required class="form-control" id="role" name="role">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Role.
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button href="#" class="btn btn-primary">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

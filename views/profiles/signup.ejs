@@ -1,0 +1,35 @@
+<% layout('/layouts/boilerplate') %>
+    <div class="row mb-3 justify-content-center">
+        <div class="card border-success col-10 col-md-6 col-lg-4">
+            <div class="card-header bg-transparent border-success text-center">
+                <h3 class="m-1">SignUp</h3>
+            </div>
+            <div class="card-body">
+                <form action="/signup" novalidate class="row need-validate" method="post">
+                    <div class="mb-3">
+                        <label for="Username">Username</label>
+                        <input type="text" required class="form-control" autofocus id="username" name="username">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a Username.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Password">Password</label>
+                        <input type="password" required class="form-control" pattern="^(?:[0-9]+[a-zA-Z]|[a-zA-Z]+[0-9])[a-z0-9A-Z]*$" minlength="8" id="password" name="password">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Password should contain atleast one letter, one number and 8 character long
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline-dark">SignUp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

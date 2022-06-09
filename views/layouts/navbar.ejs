@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #a8dadc;">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-2 my-auto"  style="color: #1d3557; font-size: 26px;" href="/">LinkRofile</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <form action="/search" class="d-flex ms-auto m-2">
+        <input class="form-control me-1" name="search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" style="background-color: #f1faee;" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <% if(!currentUser){ %>
+          <li class="nav-item m-1 me-0">
+            <a class="active nav-link" style="color: #1d3557;" href="/signin">Sign in</a>
+          </li>
+          <li class="nav-item m-1">
+            <a class="nav-link" style="color: #1d3557;" href="/signup">Sign Up</a>
+          </li>
+        <% } else { %>
+          <li class="nav-item m-1">
+            <a class="nav-link" style="color: #1d3557;" href="/<%= currentUser.username %>">Profile</a>
+          </li>
+          <li class="nav-item m-1">
+            <a class="nav-link" style="color: #1d3557;" href="/signout">Sign out</a>
+          </li> 
+        <% } %>  
+      </ul>
+    </div>
+  </div>
+</nav>
